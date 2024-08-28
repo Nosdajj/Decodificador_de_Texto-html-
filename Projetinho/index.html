@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto</title>
+    <link rel = "stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Lado Esquerdo -->
+        <div class="left">
+            <p class="info-text">❗ Apenas letras minúsculas e sem acento</p>
+            <textarea id="inputText" placeholder="Digite o texto aqui..."></textarea>
+            <div class="buttons">
+                <button onclick="cryptText()">Criptografar</button>
+                <button onclick="decryptText()">Descriptografar</button>
+            </div>
+        </div>
+        
+        <!-- Lado Direito -->
+        <div class="right">
+            <div id="outputText">
+                <img src="espera1.PNG" alt="Imagem de Espera">
+            </div>
+            <button id="copyButton" onclick="copyToClipboard()" style="display: none;">Copiar</button>
+        </div>
+    </div>
+
+    <script src="projeto.js"></script>
+</body>
+</html>

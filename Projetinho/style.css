@@ -1,0 +1,99 @@
+/* Estilo da página */
+body {
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #FFFF00, #B22222); /* Gradiente de amarelo para vermelho */
+}
+
+/* Container principal */
+.container {
+    display: flex;
+    width: 100%;
+    height: 80%; /* Garante que o container ocupe toda a altura da tela */
+}
+
+/* Lado esquerdo */
+.left {
+    flex: 1;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Caixa de texto */
+textarea {
+    width: 100%;
+    height: 80%;
+    resize: none;
+    margin-bottom: 10px;
+    background-color: #FFFACD; /* Cor de fundo amarelo claro */
+    color: #000; /* Cor do texto em preto */
+    border: 2px solid #FFA500; /* Borda laranja */
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Informação ao usuário */
+.info-text {
+    font-size: 14px;
+    color: #fff; /* Cor do texto em branco */
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Botões */
+.buttons {
+    text-align: center;
+}
+
+button {
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #FFA500; /* Cor de fundo laranja */
+    color: #fff; /* Cor do texto branco */
+    border: none;
+    border-radius: 12px; /* Cantos arredondados */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #FF8C00; /* Laranja mais escuro ao passar o mouse */
+}
+
+/* Lado direito */
+.right {
+    flex: 1;
+    display: flex;
+    flex-direction: column; /* Adicionado para empilhar o botão abaixo do resultado */
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid #ccc;
+    padding: 20px; /* Ajustado para garantir que a imagem tenha espaço */
+    box-sizing: border-box; /* Garante que o padding não aumente a largura total */
+    overflow: hidden; /* Garante que a imagem não transborde */
+}
+
+.right img {
+    max-width: 100%; /* Ajusta a imagem para não ultrapassar a largura do container */
+    max-height: 100%; /* Ajusta a imagem para não ultrapassar a altura do container */
+    object-fit: contain; /* Ajusta a imagem para se ajustar ao container sem distorcer */
+}
+
+/* Caixa de resultado arredondada */
+#outputText {
+    background-color: #FFCC99; /* Cor de fundo laranja claro */
+    padding: 20px;
+    border-radius: 12px; /* Cantos arredondados */
+    width: 80%;
+    text-align: center;
+}
+
+#copyButton {
+    margin-top: 10px; /* Espaço acima do botão Copiar */
+}
